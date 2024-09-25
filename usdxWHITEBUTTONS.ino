@@ -168,18 +168,18 @@ Global variables use 1499 bytes (73%) of dynamic memory, leaving 549 bytes for l
 #define MY_CALLSIGN_PADDED "DEBUG  "
 #else
 // Put your callsigne below and remove the "///" in front to activate.
-#define MY_CALLSIGN "G8RDI"               // <----- Add your callsign here or enable line below, replacing G8RDI!  If you don´t want the LCD to show your callsign, enable the line "uSDR+" below.
+#define MY_CALLSIGN "ZL4QDY"               // <----- Add your callsign here or enable line below, replacing G8RDI!  If you don´t want the LCD to show your callsign, enable the line "uSDR+" below.
 
-#define MY_CALLSIGN_PADDED "G8RDI  "      // <----- Also add your callsign here BUT keep the 2 spaces at the end!
+#define MY_CALLSIGN_PADDED "ZL4QDY  "      // <----- Also add your callsign here BUT keep the 2 spaces at the end!
 /// Disable below line if using your own callsign by adding // in front.
 //#define MY_CALLSIGN_PADDED "uSDR+  "    // Ensure two spaces at end of heading and that it is under 7 characters (including the 2 spaces), or this program may not work correctly.
 
 //#define MY_PREFIX ""  // No prefix, use this line by removing the //, add below to replica line.
 #define MY_PREFIX ""    // Add visiting country prefix here
 
-#define MY_NAME "ROB"   // <---- *** ADD YOUR NAME HERE FOR CW MESSAGES
+#define MY_NAME "COLIN"   // <---- *** ADD YOUR NAME HERE FOR CW MESSAGES
 #endif
-#define CALLSIGN_LENGTH 5       // Change length to match your callsign but remember the LCD isn't very wide!
+#define CALLSIGN_LENGTH 6       // Change length to match your callsign but remember the LCD isn't very wide!
 
 // *** MEMORY LIMITATION OF ATMEGA328 *** This means you may have to mix and match functions option defines.  CAT requires considerable memory, so use only if needed.
 
@@ -324,7 +324,7 @@ Global variables use 1499 bytes (73%) of dynamic memory, leaving 549 bytes for l
 #define TX_ENABLE        1   // Disable this for RX only (no transmit), e.g. to support uSDX for kids idea: https://groups.io/g/ucx/topic/81030243#6276
 #define SEMI_QSK         1   // Just after keying the transmitter, keeps the RX muted for a short amount of time in the anticipation for continued keying
 #define RIT_ENABLE       1   // Receive-In-Transit alternates the receiving frequency with an user-defined offset to compensate for any necessary tuning needed on receive
-#define VOX_ENABLE       1   // Voice-On-Xmit which is switching the transceiver into transmit as soon audio is detected (above noise gate level)
+#define VOX_ENABLE       0   // Voice-On-Xmit which is switching the transceiver into transmit as soon audio is detected (above noise gate level)
 //#define MOX_ENABLE     1   // Monitor-On-Xmit which is audio monitoring on speaker during transmit
 
 //#define ONEBUTTON      1   // Use single (encoder) button to control full the rig; optionally use L/R buttons to completely replace rotory encoder function
